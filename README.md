@@ -50,11 +50,15 @@ Backend (Render)
 Create an .env file locally and corresponding environment variables in Render:
 
 PORT=5001,
+
 MONGO_URI=your_mongodb_connection_string,
+
 JWT_SECRET=someverysecretkey,
+
 CLIENT_URL=https://campus-kart-mern.vercel.app,
 
-Example CORS setup in Express:
+
+**Example CORS setup in Express:**
 
 js
 import cors from "cors";
@@ -82,11 +86,13 @@ In Vercel project settings, add:
 
 REACT_APP_API_URL=https://campuskart-mern.onrender.com/api
 Frontend Setup
+
 Inside client/:
 
-bash
 npm install
+
 npm start
+
 client/package.json should keep the proxy for local development:
 
 json
@@ -127,18 +133,25 @@ Set REACT_APP_API_URL in Environment Variables.
 
 Deploy; main domain will be https://campus-kart-mern.vercel.app.
 
-Scripts
+**Scripts**
+
 Client
-bash
+
 npm start   # start React dev server
+
 npm run build  # build production bundle
-Server
-bash
+
+**Server**
+
+
 npm start      # start server
+
 npm run dev    # dev mode with nodemon (if configured)
 
 **Future Improvements**
 
 Add search and filters for products.
+
 Add user profile pages and ratings.
+
 Integrate payment gateway (test mode)
