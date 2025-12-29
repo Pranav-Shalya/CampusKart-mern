@@ -49,10 +49,10 @@ Backend (Render)
 
 Create an .env file locally and corresponding environment variables in Render:
 
-PORT=5001
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=someverysecretkey
-CLIENT_URL=https://campus-kart-mern.vercel.app
+PORT=5001,
+MONGO_URI=your_mongodb_connection_string,
+JWT_SECRET=someverysecretkey,
+CLIENT_URL=https://campus-kart-mern.vercel.app,
 
 Example CORS setup in Express:
 
@@ -140,9 +140,5 @@ npm run dev    # dev mode with nodemon (if configured)
 **Future Improvements**
 
 Add search and filters for products.
-
 Add user profile pages and ratings.
-
-Integrate payment gateway (test mode).
-
-You can paste this into README.md at the root of your repo and customize names, commands, and features based on your exact implementation.
+Integrate payment gateway (test mode)
